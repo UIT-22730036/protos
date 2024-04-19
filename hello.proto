@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package khang;
+
+service HelloService {
+  rpc GetHello(string) returns (string);
+}
+
+message GetHello {
+  string mess = 1;
+}
